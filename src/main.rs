@@ -14,11 +14,7 @@ fn main() {
 
     println!("{}", multiply_result);
 
-    let division_result = division(12f32, 4f32);
+    let division_result = operations::operations::division::divide(12f32, 4f32);
 
     println!("{}", division_result);
-}
-
-fn division(number_one : f32, number_two : f32) -> f32 {
-    number_one / number_two
 }
