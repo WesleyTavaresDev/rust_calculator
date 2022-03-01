@@ -1,6 +1,8 @@
+mod operations;
+
 fn main() {
 
-    let add_result = add(5f32, 5f32);
+    let add_result = operations::operations::addition::add(5f32, 5f32);
 
     println!("{}", add_result);
 
@@ -15,10 +17,6 @@ fn main() {
     let division_result = division(12f32, 4f32);
 
     println!("{}", division_result);
-}
-
-fn add(number_one : f32, number_two : f32) -> f32 {
-    number_one + number_two
 }
 
 fn subtract(number_one : f32, number_two : f32) -> f32 {
