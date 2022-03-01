@@ -6,7 +6,7 @@ fn main() {
 
     println!("{}", add_result);
 
-    let subtract_result = operations::operations::subtraction::subtract(5f32, 4f32);
+    let subtract_result = operations::subtraction::subtract(5f32, 4f32);
 
     println!("{}", subtract_result);
 
