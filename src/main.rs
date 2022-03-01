@@ -2,7 +2,7 @@ mod operations;
 
 fn main() {
 
-    let add_result = operations::operations::addition::add(5f32, 5f32);
+    let add_result = operations::addition::add(5f32, 5f32);
 
     println!("{}", add_result);
 
