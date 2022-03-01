@@ -6,7 +6,7 @@ fn main() {
 
     println!("{}", add_result);
 
-    let subtract_result = subtract(5f32, 4f32);
+    let subtract_result = operations::operations::subtraction::subtract(5f32, 4f32);
 
     println!("{}", subtract_result);
 
@@ -17,10 +17,6 @@ fn main() {
     let division_result = division(12f32, 4f32);
 
     println!("{}", division_result);
-}
-
-fn subtract(number_one : f32, number_two : f32) -> f32 {
-    number_one - number_two
 }
 
 fn multiply(number_one : f32, number_two : f32) -> f32 {
