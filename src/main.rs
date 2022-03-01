@@ -10,17 +10,13 @@ fn main() {
 
     println!("{}", subtract_result);
 
-    let multiply_result = multiply(5f32, 5f32);
+    let multiply_result = operations::operations::multiplication::multiply(5f32, 5f32);
 
     println!("{}", multiply_result);
 
     let division_result = division(12f32, 4f32);
 
     println!("{}", division_result);
-}
-
-fn multiply(number_one : f32, number_two : f32) -> f32 {
-    number_one * number_two
 }
 
 fn division(number_one : f32, number_two : f32) -> f32 {
