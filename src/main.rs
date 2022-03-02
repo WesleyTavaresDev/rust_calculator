@@ -10,7 +10,7 @@ fn main() {
 
     println!("{}", subtract_result);
 
-    let multiply_result = operations::operations::multiplication::multiply(5f32, 5f32);
+    let multiply_result = operations::multiplication::multiply(5f32, 5f32);
 
     println!("{}", multiply_result);
 
