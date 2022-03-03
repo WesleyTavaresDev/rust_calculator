@@ -1,5 +1,10 @@
 mod operations;
 
+use operations::addition::add;
+use operations::subtraction::subtract;
+use operations::multiplication::multiply;
+use operations::division::divide;
+
 mod input;
 use input::get_input;
 
@@ -9,11 +14,11 @@ fn main() {
 
     let number_two : f32 = get_input();
 
-    println!("\nAddition -> {}", operations::addition::add(number_one, number_two));
+    println!("\nAddition -> {}", add(number_one, number_two));
 
-    println!("\nSubtraction -> {}", operations::subtraction::subtract(number_one, number_two));
+    println!("\nSubtraction -> {}", subtract(number_one, number_two));
 
-    println!("\nMultiplication -> {}", operations::multiplication::multiply(number_one, number_two));
+    println!("\nMultiplication -> {}", multiply(number_one, number_two));
 
-    println!("\nDivision -> {}", operations::division::divide(number_one, number_two));
+    println!("\nDivision -> {}", divide(number_one, number_two));
 }
