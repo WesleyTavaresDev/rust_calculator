@@ -1,20 +1,19 @@
 mod operations;
 
+mod input;
+use input::get_input;
+
 fn main() {
 
-    let add_result = operations::addition::add(5f32, 5f32);
+    let number_one : f32 = get_input();
 
-    println!("{}", add_result);
+    let number_two : f32 = get_input();
 
-    let subtract_result = operations::subtraction::subtract(5f32, 4f32);
+    println!("\nAddition -> {}", operations::addition::add(number_one, number_two));
 
-    println!("{}", subtract_result);
+    println!("\nSubtraction -> {}", operations::subtraction::subtract(number_one, number_two));
 
-    let multiply_result = operations::multiplication::multiply(5f32, 5f32);
+    println!("\nMultiplication -> {}", operations::multiplication::multiply(number_one, number_two));
 
-    println!("{}", multiply_result);
-
-    let division_result = operations::division::divide(12f32, 4f32);
-
-    println!("{}", division_result);
+    println!("\nDivision -> {}", operations::division::divide(number_one, number_two));
 }
